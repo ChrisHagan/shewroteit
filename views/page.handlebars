@@ -1,5 +1,5 @@
 <div>
-  <h3 class="comicHeader">{{story.chapter}}: {{story.label}}</h3>
+  <h3 class="comicHeader">{{story.ch}}: {{story.label}}</h3>
   {{#each story.pages}}
     <div class="page clearfix">
       <div class="col-md-6">
@@ -10,7 +10,7 @@
                 <div class="partial">{{content}}</div>
               {{/if}}
               {{#if image}}
-                <img class="partial {{class}}" src="/images/pages/{{../../../../story.id}}/{{id}}.png" />
+                <img class="partial {{class}}" src="/images/pages/{{../../chapter}}/{{id}}.png" />
               {{/if}}
             {{/each}}
           </div>

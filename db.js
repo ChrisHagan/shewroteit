@@ -626,6 +626,7 @@ var stories = (function(){
         c.noteCount = fs.existsSync(p) ? 1 : 0;
         _.forEach(c.pages, function(p){
             p.content = p.content || old(p.id);
+            p.chapter = c.id;
         });
     });
     return _.sortBy(chapters,"ch");
